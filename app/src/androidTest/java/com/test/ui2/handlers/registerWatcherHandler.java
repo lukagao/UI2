@@ -118,6 +118,16 @@ public class registerWatcherHandler extends CommandHandler {
 
         }
 
+        //屏蔽规则弹框
+        try{
+            mObject=mDevice.findObject(By.text("我知道了"));
+            if(mObject!=null) {
+                mObject.click();
+            }
+        }catch (Exception e){
+
+        }
+
         return true;
     }
 }

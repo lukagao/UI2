@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+
+@SuppressWarnings("unchecked")
 public class waitHandler extends CommandHandler {
     public waitHandler(UiDevice device){super(device);}
 
